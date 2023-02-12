@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: yarn --immutable
 
-      - name: Prepare
-        run: yarn prepare
-
       - name: Lint
         run: yarn lint
 
