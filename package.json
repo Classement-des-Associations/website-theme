@@ -21,7 +21,8 @@
     "build": "nuxi build .playground",
     "generate": "nuxi generate .playground",
     "preview": "nuxi preview .playground",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "ci:publish": "zx scripts/publish.mjs"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
@@ -29,5 +30,8 @@
     "eslint": "^8.34.0",
     "nuxt": "^3.2.0",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "zx": "^7.1.1"
   }
 }
