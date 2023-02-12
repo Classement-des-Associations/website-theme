@@ -3,4 +3,7 @@ node_modules
 .output
 .nuxt
 
-.playground
+.playground/dist
+.playground/node_modules
+.playground/.output
+.playground/.nuxt
