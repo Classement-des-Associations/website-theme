@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 
 defineProps<{
@@ -11,8 +11,8 @@ defineProps<{
     srNavigationTitle: string,
     srDialogButtonTitle: {
       open: string,
-    close: string,
-  },
+      close: string,
+    }
   }
 }>()
 
