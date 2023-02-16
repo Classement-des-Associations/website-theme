@@ -12,8 +12,14 @@ export default defineNuxtConfig({
   ],
 
   css: [
-    resolve('./assets/css/app.css')
+    resolve('./assets/css/app.css'),
+    resolve('./assets/css/transitions.css'),
   ],
+
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
+  },
 
   content: {
     navigation: {
