@@ -15,7 +15,7 @@
     "app.vue",
     "app.config.ts",
     "nuxt.config.ts",
-    "tailwind.config.ts"
+    "tailwind.config.js"
   ],
   "scripts": {
     "dev": "nuxi prepare & nuxi dev .playground",
