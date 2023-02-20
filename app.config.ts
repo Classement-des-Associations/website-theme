@@ -20,7 +20,7 @@ export default defineAppConfig({
     },
     {
       name: 'Twitter',
-      to: 'https://twitter.com/leclassement',
+      to: 'https://twitter.com/leclassement/',
       icon: 'twitter'
     }
   ]
