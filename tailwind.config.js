@@ -64,5 +64,8 @@ module.exports = {
         )} 50%, ${theme('colors.primary-variation-1')} 50%)`
       })
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }
