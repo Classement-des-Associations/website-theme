@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@headlessui/vue': 1.7.8
-  '@nuxt/content': 2.4.2
+  '@nuxt/content': 2.4.3
   '@nuxtjs/eslint-config-typescript': ^12.0.0
   '@nuxtjs/fontaine': 0.2.4
   '@nuxtjs/tailwindcss': 6.3.0
@@ -16,7 +16,7 @@ specifiers:
 
 dependencies:
   '@headlessui/vue': 1.7.8
-  '@nuxt/content': 2.4.2
+  '@nuxt/content': 2.4.3
   '@nuxtjs/fontaine': 0.2.4
   '@nuxtjs/tailwindcss': 6.3.0
   '@tailwindcss/typography': 0.5.9
@@ -950,15 +950,14 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@nuxt/content/2.4.2:
-    resolution: {integrity: sha512-Nz2ZcC7R505UY5NQN+WE1pZ4ie8PBBr12qJHFAZqhWCXenzsdb87p48fvr6Zhlj8CyCTQqWg0B2fs7Lyg/CKwg==}
+  /@nuxt/content/2.4.3:
+    resolution: {integrity: sha512-HRx4+9RK2bgtBObcgfrWg/MS0G+mgq87tAA6Q6vjusDpVGE4DhnPN/9nkEMEyfebPZ22iI7z51GN2Od/SnABHA==}
     dependencies:
       '@nuxt/kit': 3.1.1
       consola: 2.15.3
       defu: 6.1.2
       destr: 1.2.2
       detab: 3.0.2
-      html-tags: 3.2.0
       json5: 2.2.3
       knitwork: 1.0.0
       listhen: 1.0.3
