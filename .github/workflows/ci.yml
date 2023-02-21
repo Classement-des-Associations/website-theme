@@ -15,27 +15,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: npm i -g pnpm
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: "yarn"
+          cache: "pnpm"
+
       - name: Install dependencies
-        run: yarn --immutable
+        run: pnpm install --frozen-lockfile
 
       - name: Lint
-        run: yarn lint
+        run: pnpm run lint
 
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: npm i -g pnpm
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: "yarn"
+          cache: "pnpm"
 
       - name: Install dependencies
-        run: yarn --immutable
+        run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: yarn build
+        run: pnpm run build

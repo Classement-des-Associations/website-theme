@@ -27,11 +27,5 @@ export default defineNuxtConfig({
     navigation: {
       fields: ['for', 'dropdown']
     }
-  },
-
-  runtimeConfig: {
-    public: {
-      trailingSlash: true
-    }
   }
 })
