@@ -1,5 +1,8 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import { createResolver } from '@nuxt/kit'
+import { createResolver, logger } from '@nuxt/kit'
+import { version } from './package.json'
+
+logger.success(`Using Website Theme v${version}`)
 
 const { resolve } = createResolver(import.meta.url)
 
