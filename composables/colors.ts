@@ -15,7 +15,7 @@ interface Colors {
   backgroundGradient: BackgroundGradient | null
 }
 
-export const useColorsByPart = (type: Part): Ref<Colors> => {
+export const useColorsByPart = (type?: Part): Ref<Colors> => {
   const colors: Colors = {
     textColor: null,
     backgroundColor: null,

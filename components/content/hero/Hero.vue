@@ -2,7 +2,7 @@
 import type { Part } from '../../../types'
 
 const props = defineProps<{
-  part: Part,
+  part?: Part,
   withGraphics?: boolean
 }>()
 
@@ -18,8 +18,8 @@ const colors = useColorsByPart(props.part)
 
     <div class="flex flex-col justify-center items-center gap-8 text-center">
       <h1
-        class="text-3xl md:text-5xl !leading-tight font-bold text-transparent bg-clip-text blog:text-black  transition ease-in"
-        :class="colors.backgroundGradient"
+        class="text-3xl md:text-5xl !leading-tight font-bold blog:text-black transition ease-in"
+        :class="part ? [colors.backgroundGradient, 'text-transparent bg-clip-text'] : 'text-black'"
       >
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h1>
