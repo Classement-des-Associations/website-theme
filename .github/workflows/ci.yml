@@ -20,6 +20,8 @@ jobs:
           node-version: "18"
           cache: "pnpm"
 
+      - run: npm i -g pnpm
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -34,6 +36,8 @@ jobs:
         with:
           node-version: "18"
           cache: "pnpm"
+
+      - run: npm i -g pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
