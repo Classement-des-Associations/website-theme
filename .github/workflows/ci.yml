@@ -15,12 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: npm i -g pnpm
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
           cache: "pnpm"
-
-      - run: npm i -g pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -32,12 +31,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: npm i -g pnpm
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
           cache: "pnpm"
-
-      - run: npm i -g pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
