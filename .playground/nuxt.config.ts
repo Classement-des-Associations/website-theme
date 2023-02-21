@@ -5,7 +5,9 @@ export default defineNuxtConfig({
   },
 
   content: {
-    documentDriven: true,
+    documentDriven: {
+      trailingSlash: true
+    },
   },
 
   runtimeConfig: {
