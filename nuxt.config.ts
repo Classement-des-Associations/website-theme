@@ -29,9 +29,5 @@ export default defineNuxtConfig({
     }
   },
 
-  runtimeConfig: {
-    public: {
-      trailingSlash: true
-    }
-  }
+  debug: true
 })

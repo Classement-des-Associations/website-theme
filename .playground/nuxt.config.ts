@@ -16,6 +16,7 @@ export default defineNuxtConfig({
       siteName: 'Website theme',
       siteDescription: 'Welcome to the website theme!',
       language: 'fr-FR',
+      trailingSlash: true
     }
   },
 })
