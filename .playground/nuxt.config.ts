@@ -6,5 +6,14 @@ export default defineNuxtConfig({
 
   content: {
     documentDriven: true,
-  }
+  },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',
+      siteName: 'Website theme',
+      siteDescription: 'Welcome to the website theme!',
+      language: 'fr-FR',
+    }
+  },
 })

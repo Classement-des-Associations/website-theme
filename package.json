@@ -1,7 +1,7 @@
 {
   "name": "@classement-des-associations/website-theme",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "main": "./nuxt.config.ts",
   "files": [
     "assets",
@@ -36,8 +36,10 @@
     "@nuxt/content": "^2.4.3",
     "@nuxtjs/fontaine": "^0.2.4",
     "@nuxtjs/tailwindcss": "^6.4.1",
+    "@tailwindcss/typography": "^0.5.9",
     "nuxt": "^3.2.2",
-    "nuxt-icon": "^0.3.2"
+    "nuxt-icon": "^0.3.2",
+    "nuxt-seo-kit": "^1.2.3"
   },
   "packageManager": "yarn@3.4.1"
 }
