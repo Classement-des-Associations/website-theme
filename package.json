@@ -32,12 +32,12 @@
     "zx": "^7.1.1"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.9",
+    "@headlessui/vue": "^1.7.10",
     "@nuxt/content": "^2.4.3",
     "@nuxtjs/fontaine": "^0.2.4",
-    "@nuxtjs/tailwindcss": "^6.3.0",
-    "nuxt": "^3.2.0",
-    "nuxt-icon": "^0.3.0"
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "nuxt": "^3.2.2",
+    "nuxt-icon": "^0.3.2"
   },
   "packageManager": "yarn@3.4.1"
 }
