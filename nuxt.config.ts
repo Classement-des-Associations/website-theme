@@ -4,6 +4,8 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  extends: ['nuxt-seo-kit'],
+
   modules: [
     'nuxt-icon',
     '@nuxt/content',
@@ -24,6 +26,12 @@ export default defineNuxtConfig({
   content: {
     navigation: {
       fields: ['for', 'dropdown']
+    }
+  },
+
+  runtimeConfig: {
+    public: {
+      trailingSlash: true
     }
   }
 })

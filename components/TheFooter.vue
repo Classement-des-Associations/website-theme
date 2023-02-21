@@ -21,7 +21,7 @@ const { navigation } = useContent()
             <LogosClassementFull
               aria-hidden="true"
               class="mx-auto text-white"
-              @click.right.prevent="navigateTo('/design-kit')"
+              @click.right.prevent="navigateTo(logo.rightClickUrl, {external: logo.rightClickUrl.startsWith('http')})"
             />
           </NuxtLink>
           <ul class="lg:ml-16 flex flex-row justify-center space-x-[1.375rem] lg:space-x-12">
@@ -50,7 +50,7 @@ const { navigation } = useContent()
                 <NuxtLink
                   class="hover:underline hover:underline-offset-4"
                   active-class="active-footer"
-                  :to="item._path"
+                  :to="item._path + '/'"
                 >
                   {{ item.title }}
                 </NuxtLink>
