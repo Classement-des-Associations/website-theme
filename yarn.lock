@@ -392,10 +392,10 @@ __metadata:
     "@nuxt/content": ^2.4.3
     "@nuxtjs/eslint-config-typescript": ^12.0.0
     "@nuxtjs/fontaine": ^0.2.4
-    "@nuxtjs/tailwindcss": ^6.4.1
+    "@nuxtjs/tailwindcss": ^6.3.0
     "@tailwindcss/typography": ^0.5.9
     eslint: ^8.34.0
-    nuxt: ^3.2.2
+    nuxt: ^3.2.0
     nuxt-icon: ^0.3.2
     nuxt-seo-kit: ^1.2.3
     typescript: ^4.9.5
@@ -432,9 +432,9 @@ __metadata:
   linkType: hard
 
 "@csstools/css-tokenizer@npm:^2.0.0":
-  version: 2.0.2
-  resolution: "@csstools/css-tokenizer@npm:2.0.2"
-  checksum: 49bd0a191954b56e9fa50d4a3e2d04059196f04efe398c0cb3c2cbcc18549313d984cd0b8c3faa161d81768256014461d1b4d0f40a67764c9c7a6c0e14a97fea
+  version: 2.1.0
+  resolution: "@csstools/css-tokenizer@npm:2.1.0"
+  checksum: af3619557e18cd348810cfb41b3b7177b36d216df8dd4cac3979f241c15416baf8cdd55fb764ecc78fab5985b085363cfc8e8b8a18aaa361d00c9b9300b7c0f3
   languageName: node
   linkType: hard
 
@@ -1370,7 +1370,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/tailwindcss@npm:^6.4.1":
+"@nuxtjs/tailwindcss@npm:^6.3.0":
   version: 6.4.1
   resolution: "@nuxtjs/tailwindcss@npm:6.4.1"
   dependencies:
@@ -8334,7 +8334,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt@npm:^3.2.2":
+"nuxt@npm:^3.2.0":
   version: 3.2.2
   resolution: "nuxt@npm:3.2.2"
   dependencies:
