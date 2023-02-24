@@ -32,7 +32,7 @@
     "zx": "^7.1.1"
   },
   "dependencies": {
-    "@headlessui/vue": "1.7.8",
+    "@headlessui/vue": "1.7.11",
     "@nuxt/content": "2.4.2",
     "@nuxtjs/fontaine": "0.2.4",
     "@nuxtjs/tailwindcss": "6.3.0",

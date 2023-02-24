@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@headlessui/vue': 1.7.8
+  '@headlessui/vue': 1.7.11
   '@nuxt/content': 2.4.2
   '@nuxtjs/eslint-config-typescript': ^12.0.0
   '@nuxtjs/fontaine': 0.2.4
@@ -15,7 +15,7 @@ specifiers:
   zx: ^7.1.1
 
 dependencies:
-  '@headlessui/vue': 1.7.8
+  '@headlessui/vue': 1.7.11
   '@nuxt/content': 2.4.2
   '@nuxtjs/fontaine': 0.2.4
   '@nuxtjs/tailwindcss': 6.3.0
@@ -809,8 +809,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@headlessui/vue/1.7.8:
-    resolution: {integrity: sha512-J83kAz3drFjndXz/AOoxmgzVo/MtSNFFn/K9qhSSJ8EGhmRfwdJLhZ0W4NSrw6A10JxhXDlkjoV0UxOiBLr5iQ==}
+  /@headlessui/vue/1.7.11:
+    resolution: {integrity: sha512-VsNqx9Lc1ftOyIazBF9EX5BS4WYwwaFX+1jBWXQakeH1o4xnoZKlBSlvEgmAnFLO9GDVmn7kKVOWfFgQn2aRZA==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
