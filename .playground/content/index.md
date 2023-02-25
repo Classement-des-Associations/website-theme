@@ -3,21 +3,29 @@ for: header
 title: Playground
 ---
 
-::hero
+::home-get-started
 ---
-part: classement
+sectionClass: mt-80
+primaryButtonLink: /playground
+primaryButtonText: Get started
+secondaryButtonLink: /playground
+secondaryButtonText: Playground
 ---
+#overTitle
+Get started
 #title
 Playground
 #subtitle
 A place to play with the code
 ::
 
-::hero
+::newsletter-section
 ---
+sectionClass: my-20
+buttonText: S'abonner
 ---
 #title
-Playground with gradient
+S'abonner au Classement
 #subtitle
-A place to play with the code
+Une newsletter pour tous ceux qui veulent prolonger l'aventure du Classement avec des exclusivités et des actualités sur la vie associative étudiante.
 ::

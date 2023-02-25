@@ -3,7 +3,15 @@ for: footer
 title: Newsletter
 ---
 
-# Newsletter
+::hero
+---
+part: classement
+---
+#title
+Newsletter
+#subtitle
+La newsletter du Classement
+::
 
 ::newsletter-section
 ---
