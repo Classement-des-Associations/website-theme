@@ -1,6 +1,6 @@
 ---
 for: footer
-title: "CGU"
+title: CGU
 layout: transition
 ---
 

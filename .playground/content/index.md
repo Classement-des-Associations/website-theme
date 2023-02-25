@@ -1,6 +1,6 @@
 ---
 for: header
-title: "Playground"
+title: Playground
 ---
 
 ::hero

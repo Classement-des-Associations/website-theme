@@ -10,10 +10,6 @@ const sameAs = useSameAs()
 <template>
   <Html>
 
-    <Head>
-      <SeoKit />
-    </Head>
-
     <Body>
       <TheHeader sr-navigation-title="Navigation Primaire" :logo="logo"
         :dialog="{ srNavigationTitle: 'Navigation Primaire Mobile', srDialogButtonTitle: { open: 'Ouvrir le menu de navigation', close: 'Fermer le menu de navigation' } }" />

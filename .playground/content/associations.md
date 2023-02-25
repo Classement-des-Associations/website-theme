@@ -1,6 +1,6 @@
 ---
 for: header
-title: "Associations"
+title: Associations
 ---
 
 # Associations
