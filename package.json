@@ -41,5 +41,5 @@
     "nuxt-icon": "0.2.10",
     "nuxt-seo-kit": "^1.2.3"
   },
-  "packageManager": "pnpm@7.27.1"
+  "packageManager": "pnpm@7.28.0"
 }
