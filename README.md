@@ -71,3 +71,13 @@ pnpm preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+
+
+# Setup Runtime Config
+
+Currently, this theme using these runtime config:
+
+- `newsletterSubscriptionLink` - The link to the newsletter subscription form
+
+
+Read more about [Runtime Config](https://nuxt.com/docs/guide/going-further/runtime-config).
