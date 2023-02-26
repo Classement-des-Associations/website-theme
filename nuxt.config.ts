@@ -7,6 +7,8 @@ logger.success(`Using Website Theme v${version}`)
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  extends: ['nuxt-seo-kit'],
+
   modules: [
     'nuxt-icon',
     '@nuxt/content',
