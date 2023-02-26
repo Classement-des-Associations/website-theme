@@ -3,6 +3,18 @@ for: header
 title: Playground
 ---
 
+::home-hero
+---
+sectionClass: my-10
+primaryButtonLink: /playground
+primaryButtonText: Get started
+---
+#title
+Playground
+#subtitle
+A place to play with the code
+::
+
 ::home-get-started
 ---
 sectionClass: mt-80
