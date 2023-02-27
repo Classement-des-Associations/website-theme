@@ -62,10 +62,32 @@ module.exports = {
         'center-classement': `linear-gradient(135deg, ${theme(
           'colors.primary-base'
         )} 50%, ${theme('colors.primary-variation-1')} 50%)`
+      }),
+      linearBorderGradients: ({ theme }) => ({
+        colors: {
+          associations: [
+            theme('colors.primary-base'),
+            theme('colors.primary-variation-1')
+          ],
+          partenaires: [
+            theme('colors.accent-purple'),
+            theme('colors.accent-blue')
+          ],
+          'associations-light': [
+            theme('colors.primary-base / 0.3'),
+            theme('colors.primary-variation-1 / 0.3')
+          ],
+          'tour-asso': [
+            theme('colors.primary-base'),
+            theme('colors.accent-purple')
+          ]
+        },
+        background: theme('colors')
       })
     }
   },
   plugins: [
+    require('tailwindcss-border-gradient-radius'),
     require('@tailwindcss/typography')
   ]
 }

@@ -9,4 +9,10 @@ export default defineNuxtConfig({
       trailingSlash: true
     },
   },
+
+  runtimeConfig: {
+    public: {
+      newsletterSubscriptionLink: 'https://example.com'
+    },
+  }
 })

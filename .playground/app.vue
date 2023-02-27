@@ -9,10 +9,7 @@ const sameAs = useSameAs()
 
 <template>
   <Html>
-
-    <Head>
-      <SeoKit />
-    </Head>
+    <SeoKit />
 
     <Body>
       <TheHeader sr-navigation-title="Navigation Primaire" :logo="logo"

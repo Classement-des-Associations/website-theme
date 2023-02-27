@@ -1,9 +1,14 @@
 ---
 for: header
-title: "Associations"
+title: Associations
 ---
 
-# Associations
+::hero
+#title
+Playground with gradient
+#subtitle
+A place to play with the code
+::
 
 ::prose-section
 ---

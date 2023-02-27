@@ -30,5 +30,5 @@ export default defineNuxtConfig({
     navigation: {
       fields: ['for', 'dropdown']
     }
-  }
+  },
 })
