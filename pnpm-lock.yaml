@@ -1,27 +1,27 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@headlessui/vue': 1.7.8
+  '@headlessui/vue': 1.7.10
   '@nuxt/content': 2.4.2
   '@nuxtjs/eslint-config-typescript': ^12.0.0
   '@nuxtjs/fontaine': 0.2.4
-  '@nuxtjs/tailwindcss': 6.3.0
+  '@nuxtjs/tailwindcss': 6.4.1
   '@tailwindcss/typography': 0.5.9
   eslint: ^8.34.0
   nuxt: 3.2.2
-  nuxt-icon: 0.2.10
+  nuxt-icon: 0.3.2
   nuxt-seo-kit: ^1.2.3
   typescript: ^4.9.5
   zx: ^7.1.1
 
 dependencies:
-  '@headlessui/vue': 1.7.8
+  '@headlessui/vue': 1.7.10
   '@nuxt/content': 2.4.2
   '@nuxtjs/fontaine': 0.2.4
-  '@nuxtjs/tailwindcss': 6.3.0
+  '@nuxtjs/tailwindcss': 6.4.1
   '@tailwindcss/typography': 0.5.9
   nuxt: 3.2.2_7kw3g6rralp5ps6mg3uyzz6azm
-  nuxt-icon: 0.2.10
+  nuxt-icon: 0.3.2
   nuxt-seo-kit: 1.2.3
 
 devDependencies:
@@ -809,8 +809,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@headlessui/vue/1.7.8:
-    resolution: {integrity: sha512-J83kAz3drFjndXz/AOoxmgzVo/MtSNFFn/K9qhSSJ8EGhmRfwdJLhZ0W4NSrw6A10JxhXDlkjoV0UxOiBLr5iQ==}
+  /@headlessui/vue/1.7.10:
+    resolution: {integrity: sha512-qAov7JULOBBes5CU+MiGpwMKoXxLHXS703WEZkOPxYjPD2p7f286ozlFxw7JjA2MmVgbnis2Wvgg/4hT7nRFIg==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
@@ -1404,13 +1404,14 @@ packages:
       - supports-color
     dev: false
 
-  /@nuxtjs/tailwindcss/6.3.0:
-    resolution: {integrity: sha512-P8u3VrgyCUHUniq5yQfstRceq1E3HmLqS5oNdwFHscCVPepilimv3333gdgFhDaL0Nv1xzq4Rg2KRsQFRqnBhQ==}
+  /@nuxtjs/tailwindcss/6.4.1:
+    resolution: {integrity: sha512-b8c6h+iiHJJ/rw/IirmYlF0RaIGVIVFmZXdHYPuDW/Mf6WAEz8IkAicyO5gRL3jYKp98kld067XPGsumDhaVVg==}
     dependencies:
       '@nuxt/kit': 3.2.2
       '@nuxt/postcss8': 1.1.3
       autoprefixer: 10.4.13_postcss@8.4.21
       chalk: 5.2.0
+      chokidar: 3.5.3
       clear-module: 4.1.2
       consola: 2.15.3
       defu: 6.1.2
@@ -6229,8 +6230,8 @@ packages:
       - supports-color
     dev: false
 
-  /nuxt-icon/0.2.10:
-    resolution: {integrity: sha512-pI0BOF1bHw73MbDYsTNpZNJhWJ3XAjG4SO7B8sHCfxb3SZmw3Uu/KoKiLtyO68Oc4z4CYCMIjbkTflwpoOBMEQ==}
+  /nuxt-icon/0.3.2:
+    resolution: {integrity: sha512-066pfova2nE9GZDvHE9oMkqJCwsnJvOZKU2FOSzRpjfXupH3UPtP9Zw8+C2wvZ82Nel6fuRoIUNQh5Sx8ZeQrQ==}
     dependencies:
       '@iconify/vue': 4.1.0
       '@nuxt/kit': 3.2.2
