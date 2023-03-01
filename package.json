@@ -1,7 +1,7 @@
 {
   "name": "@classement-des-associations/website-theme",
   "type": "module",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "main": "./nuxt.config.ts",
   "files": [
     "assets",
