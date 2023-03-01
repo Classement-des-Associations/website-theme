@@ -1,6 +1,6 @@
-# Nuxt Layer Starter
+# Website Theme
 
-Create Nuxt extendable layer with this GitHub template.
+A Nuxt theme for websites of [Le Classement des Associations](https://le-classement.fr).
 
 ## Setup
 
@@ -12,33 +12,29 @@ pnpm install
 
 ## Working on your theme
 
-Your theme is at the root of this repository, it is exactly like a regular Nuxt project, except you can publish it on NPM.
+This theme is at the root of this repository, it is exactly like a regular Nuxt project.
 
-The `.playground` directory should help you on trying your theme during development.
+The `.playground` directory should help you on trying theme during development.
 
 Running `pnpm dev` will prepare and boot `.playground` directory, which imports your theme itself.
 
-## Distributing your theme
+## Distributing theme
 
-Your Nuxt layer is shaped exactly the same as any other Nuxt project, except you can publish it on NPM.
+This project is a Nuxt layer which is shaped exactly the same as any other Nuxt project, except it is published on NPM.
 
-To do so, you only have to check if `files` in `package.json` are valid, then run:
+## Install
 
-```bash
-npm publish --access public
-```
-
-Once done, your users will only have to run:
+To install this theme, you can use `npm`, `yarn` or `pnpm`:
 
 ```bash
-npm install --save your-theme
+npm install --save @classement-des-associations/website-theme
 ```
 
 Then add the dependency to their `extends` in `nuxt.config`:
 
 ```ts
 defineNuxtConfig({
-  extends: 'your-theme'
+  extends: '@classement-des-associations/website-theme'
 })
 ```
 
@@ -49,6 +45,15 @@ Start the development server on http://localhost:3000
 ```bash
 pnpm dev
 ```
+
+# Setup Runtime Config
+
+Currently, this theme using these runtime config:
+
+- `newsletterSubscriptionLink` - The link to the newsletter subscription form
+
+
+Read more about [Runtime Config](https://nuxt.com/docs/guide/going-further/runtime-config).
 
 ## Production
 
@@ -71,13 +76,3 @@ pnpm preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
-
-
-# Setup Runtime Config
-
-Currently, this theme using these runtime config:
-
-- `newsletterSubscriptionLink` - The link to the newsletter subscription form
-
-
-Read more about [Runtime Config](https://nuxt.com/docs/guide/going-further/runtime-config).
