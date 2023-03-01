@@ -4,10 +4,10 @@ defineProps<{
 }>()
 </script>
 
-
 <template>
   <div
-    class="relative gradient-border bg-white rounded-lg flex flex-col md:flex-row gap-8 md:gap-20 items-center px-10 py-14">
+    class="relative gradient-border bg-white rounded-lg flex flex-col md:flex-row gap-8 md:gap-20 items-center px-10 py-14"
+  >
     <div class="flex flex-col gap-5">
       <h2 class="text-2xl md:text-3xl font-bold">
         <slot name="title" />
