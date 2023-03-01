@@ -51,6 +51,7 @@ pnpm dev
 Currently, this theme using these runtime config:
 
 - `newsletterSubscriptionLink` - The link to the newsletter subscription form
+- `linkedinGroupLink` - The link to the LinkedIn group
 
 
 Read more about [Runtime Config](https://nuxt.com/docs/guide/going-further/runtime-config).
