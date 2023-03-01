@@ -5,6 +5,7 @@ const props = defineProps<{
   primaryButtonLink?: string;
   secondaryButtonText?: string;
   secondaryButtonLink?: string;
+  showEllipsis?: boolean;
 }>()
 
 const primaryLink = useClassementLink(props.primaryButtonLink)
@@ -31,10 +32,14 @@ onBeforeUnmount(() => observer.value?.disconnect())
 </script>
 
 <template>
-  <BaseSection :class="[!slideIn ? 'opacity-0 translate-y-20' : 'opacity-100 translate-y-0', sectionClass]"
-    class="relative transition duration-700">
+  <BaseSection
+    :class="[!slideIn ? 'opacity-0 translate-y-20' : 'opacity-100 translate-y-0', sectionClass]"
+    class="relative transition duration-700"
+  >
     <div
-      class="absolute -z-10 -left-32 sm:-left-40 -top-52 sm:-top-80 w-[18rem] sm:w-[26rem] h-[18rem] sm:h-[26rem] rounded-full blur-[72px] bg-center-classement opacity-50" />
+      v-if="showEllipsis"
+      class="absolute -z-10 -left-32 sm:-left-40 -top-52 sm:-top-80 w-[18rem] sm:w-[26rem] h-[18rem] sm:h-[26rem] rounded-full blur-[72px] bg-center-classement opacity-50"
+    />
 
     <div ref="root" class="relative flex flex-col xl:flex-row xl:items-center">
       <div class="flex flex-col">
@@ -52,8 +57,12 @@ onBeforeUnmount(() => observer.value?.disconnect())
       </div>
 
       <div class="flex-grow mt-6 xl:mt-0 xl:mb-4 relative flex flex-row items-center xl:justify-end gap-5">
-        <ClassementLink v-if="primaryLink && primaryButtonText" :button-link="primaryLink"
-          :button-text="primaryButtonText" part="classement" />
+        <ClassementLink
+          v-if="primaryLink && primaryButtonText"
+          :button-link="primaryLink"
+          :button-text="primaryButtonText"
+          part="classement"
+        />
         <NuxtLink :to="secondaryLink">
           {{ secondaryButtonText }}
         </NuxtLink>
