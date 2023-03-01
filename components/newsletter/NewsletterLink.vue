@@ -3,7 +3,7 @@ defineProps<{
   buttonText: string
 }>()
 
-const newsletterLink = useRuntimeConfig().public.newsletterSubscriptionLink
+const newsletterLink = useClassementLink('newsletter')
 </script>
 
 <template>

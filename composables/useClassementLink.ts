@@ -9,7 +9,7 @@ export const useClassementLink = (link?: string) => {
 
   switch (link) {
     case 'newsletter':
-      return useRuntimeConfig().newsletterSubscriptionLink
+      return useRuntimeConfig().public.newsletterSubscriptionLink
     default:
       throw new Error(`Unknown classement link: ${link}`)
   }

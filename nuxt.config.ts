@@ -31,4 +31,10 @@ export default defineNuxtConfig({
       fields: ['for', 'dropdown']
     }
   },
+
+  runtimeConfig: {
+    public: {
+      newsletterSubscriptionLink: 'https://example.com'
+    }
+  }
 })
