@@ -7,7 +7,7 @@ defineProps<{
 <template>
   <BaseSection :class="sectionClass">
     <Prose class="mx-auto">
-      <ContentSlot :use="$slots.content" unwrap="p" />
+      <ContentSlot :use="$slots.content" />
     </Prose>
   </BaseSection>
 </template>
