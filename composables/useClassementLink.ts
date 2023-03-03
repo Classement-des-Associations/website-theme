@@ -1,6 +1,4 @@
-import { ClassementLink } from '../types'
-
-export const useClassementLink = (link?: ClassementLink) => {
+export const useClassementLink = (link?: string) => {
   if (!link) {
     return ''
   }
@@ -9,12 +7,7 @@ export const useClassementLink = (link?: ClassementLink) => {
     return link
   }
 
-  switch (link) {
-    case 'newsletter':
-      return useRuntimeConfig().public.newsletterSubscriptionLink
-    case 'linkedin-group':
-      return useRuntimeConfig().public.linkedinGroupLink
-    default:
-      throw new Error(`Unknown classement link: ${link}`)
-  }
+  const runtimeConfig = useRuntimeConfig()
+
+  return runtimeConfig.public[link]
 }
