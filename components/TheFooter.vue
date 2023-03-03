@@ -48,7 +48,7 @@ const { navigation } = useContent()
             <template v-for="item in navigation" :key="item._path">
               <li v-if="item.for === 'footer'">
                 <NuxtLink
-                  class="hover:underline hover:underline-offset-4"
+                  class="hover:underline hover:underline-offset-4 py-2"
                   active-class="active-footer"
                   :to="item._path"
                 >
