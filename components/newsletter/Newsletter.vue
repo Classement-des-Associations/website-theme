@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 defineProps<{
+  buttonLink: string
   buttonText: string
 }>()
 </script>
@@ -17,7 +18,7 @@ defineProps<{
       </p>
     </div>
     <div class="z-10">
-      <NewsletterLink :button-text="buttonText" />
+      <NewsletterLink :button-link="buttonLink" :button-text="buttonText" />
     </div>
   </div>
 </template>
