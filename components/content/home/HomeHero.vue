@@ -15,10 +15,15 @@ const secondaryLink = useClassementLink(props.secondaryButtonLink)
 
 <template>
   <BaseSection :class="sectionClass">
-    <div class="flex flex-row items-center gap-12">
+    <div class="flex flex-col md:flex-row">
       <div class="w-full flex flex-col items-center sm:items-start gap-y-8">
-        <BaseNuxtLink v-if="topButtonLink && topButtonText" :button-link="topButtonLink" :button-text="topButtonText"
-          class="bg-zinc-100 hover:bg-zinc-200" small />
+        <BaseNuxtLink
+          v-if="topButtonLink && topButtonText"
+          :button-link="topButtonLink"
+          :button-text="topButtonText"
+          class="bg-zinc-100 hover:bg-zinc-200"
+          small
+        />
         <h1 class="text-black text-center sm:text-start text-5xl md:text-7xl md:leading-snug font-bold">
           <ContentSlot :use="$slots.title" unwrap="p" />
         </h1>
@@ -26,10 +31,18 @@ const secondaryLink = useClassementLink(props.secondaryButtonLink)
           <ContentSlot :use="$slots.subtitle" unwrap="p" />
         </p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <ClassementLink v-if="primaryLink && primaryButtonText" :button-link="primaryLink"
-            :button-text="primaryButtonText" part="classement" />
-          <BaseNuxtLink v-if="secondaryLink && secondaryButtonText" :button-link="secondaryLink"
-            :button-text="secondaryButtonText" right-icon="heroicons:chevron-right" />
+          <ClassementLink
+            v-if="primaryLink && primaryButtonText"
+            :button-link="primaryLink"
+            :button-text="primaryButtonText"
+            part="classement"
+          />
+          <BaseNuxtLink
+            v-if="secondaryLink && secondaryButtonText"
+            :button-link="secondaryLink"
+            :button-text="secondaryButtonText"
+            right-icon="heroicons:chevron-right"
+          />
         </div>
       </div>
       <ContentSlot :use="$slots.extra" />
