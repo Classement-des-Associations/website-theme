@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-defineProps<{
+const props = defineProps<{
+  buttonLink: string
   buttonText: string
 }>()
 
-const newsletterLink = useClassementLink('newsletter')
+const newsletterLink = useClassementLink(props.buttonLink)
 </script>
 
 <template>
