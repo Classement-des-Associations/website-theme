@@ -18,7 +18,7 @@ defineProps<{
       </p>
     </div>
     <div class="z-10">
-      <NewsletterLink :button-link="buttonLink" :button-text="buttonText" />
+      <ClassementLink part="classement" target="_blank" :button-link="buttonLink" :button-text="buttonText" />
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { Part } from '../../../types'
 
-const props = defineProps<{
+defineProps<{
   buttonLink: string
   buttonText: string
   part: Part
@@ -19,8 +19,6 @@ const useClass = function (part: Part) {
       return ''
   }
 }
-
-const buttonLink = useClassementLink(props.buttonLink)
 </script>
 
 <template>
