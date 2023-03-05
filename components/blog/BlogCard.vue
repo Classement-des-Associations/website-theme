@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 
-const props = defineProps<{ article: ParsedContent }>()
+const props = defineProps<{ article: ParsedContent, rel?: string }>()
 
 const datetime = ref(new Date(props.article.datePublished || Date.now()))
 
@@ -14,7 +14,7 @@ const normalizedPart = useNormalizedPart(props.article.part)
     class="relative bg-white group rounded-xl before:rounded-xl gradient-border"
     :class="`gradient-border-${article.part}`"
   >
-    <NuxtLink :to="article._path" class="p-5 relative z-10 h-full flex flex-col gap-4">
+    <NuxtLink :to="article._path" :rel="rel" class="p-5 relative z-10 h-full flex flex-col gap-4">
       <div class="aspect-w-16 aspect-h-9 rounded-lg md:rounded overflow-hidden">
         <img
           v-if="article.cover"
