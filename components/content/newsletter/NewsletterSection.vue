@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const props = defineProps<{
+  buttonLink: string
   buttonText: string
   sectionClass?: string
   visible?: boolean
@@ -27,10 +28,12 @@ onBeforeUnmount(() => observer.value?.disconnect())
 </script>
 
 <template>
-  <BaseSection class="relative transition duration-700"
-    :class="[!slideIn ? 'opacity-0 translate-y-20' : 'opacity-100 translate-y-0', sectionClass]">
+  <BaseSection
+    class="relative transition duration-700"
+    :class="[!slideIn ? 'opacity-0 translate-y-20' : 'opacity-100 translate-y-0', sectionClass]"
+  >
     <div ref="root">
-      <Newsletter :button-text="buttonText">
+      <Newsletter :button-link="buttonLink" :button-text="buttonText">
         <template #title>
           <ContentSlot :use="$slots.title" unwrap="p" />
         </template>
