@@ -88,6 +88,9 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-border-gradient-radius'),
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    plugin(({ addVariant }) => {
+      addVariant('blog', '.blog &')
+    })
   ]
 }
