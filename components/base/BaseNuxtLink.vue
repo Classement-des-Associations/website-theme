@@ -6,14 +6,17 @@ const props = defineProps<{
   rightIcon?: string
   small?: boolean
   type?: 'primary'
+  outline?: boolean
 }>()
 
 const className = computed(() => {
-  switch (props.type) {
-    case 'primary':
-      return 'bg-primary-base hover:bg-primary-base/90 font-medium text-black focus-visible:ring-primary-base hover:focus-visible:ring-primary-base/80'
-    default:
-      return ''
+  if (props.type === 'primary') {
+    const defaultPrimaryClass = 'border-2 border-primary-base focus-visible:ring-primary-base hover:focus-visible:ring-primary-base/80'
+    if (props.outline) {
+      return [defaultPrimaryClass, 'bg-white text-black font-medium hover:bg-primary-base/10'].join(' ')
+    } else {
+      return [defaultPrimaryClass, 'bg-primary-base text-black font-medium hover:bg-primary-base/90 hover:border-primary-base/90'].join(' ')
+    }
   }
 })
 
