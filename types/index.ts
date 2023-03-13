@@ -1,2 +1,2 @@
 export * from './part'
-export * from './classement-link'
+export * from './social'
