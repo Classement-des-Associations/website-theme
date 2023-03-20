@@ -17,8 +17,10 @@ const colors = useColorsByPart(props.part)
     </template>
 
     <div class="flex flex-col justify-center items-center gap-8 text-center">
-      <h1 class="text-3xl md:text-5xl md:leading-snug font-bold blog:text-black transition ease-in"
-        :class="part ? [colors.backgroundGradient, 'text-transparent bg-clip-text'] : 'text-black'">
+      <h1
+        class="text-3xl md:text-5xl md:leading-snug font-bold blog:text-black transition ease-in"
+        :class="part ? [colors.backgroundGradient, 'text-transparent bg-clip-text'] : 'text-black'"
+      >
         <ContentSlot :use="$slots.title" unwrap="p" />
       </h1>
       <p v-if="$slots.subtitle" class="max-w-3xl text-lg font-medium">
@@ -27,7 +29,7 @@ const colors = useColorsByPart(props.part)
     </div>
 
     <template v-if="$slots.actions">
-      <div class="mt-16 flex flex-row justify-center items-center space-x-4 md:space-x-6">
+      <div class="mt-16 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
         <ContentSlot :use="$slots.actions" unwrap="p" />
       </div>
     </template>
