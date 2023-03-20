@@ -4,7 +4,7 @@ import { Part } from '../../../types'
 defineProps<{
   buttonLink: string
   buttonText: string
-  part: Part
+  part?: Part
 }>()
 
 const useClass = function (part: Part) {
