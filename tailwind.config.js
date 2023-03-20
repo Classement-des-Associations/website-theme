@@ -80,9 +80,17 @@ module.exports = {
             theme('colors.primary-base / 0.3'),
             theme('colors.primary-variation-1 / 0.3')
           ],
+          'partenaires-light': [
+            theme('colors.accent-purple / 0.3'),
+            theme('colors.accent-blue / 0.3')
+          ],
           'tour-asso': [
             theme('colors.primary-base'),
             theme('colors.accent-purple')
+          ],
+          'tour-asso-light': [
+            theme('colors.primary-base / 0.3'),
+            theme('colors.accent-purple / 0.3')
           ]
         },
         background: theme('colors')
