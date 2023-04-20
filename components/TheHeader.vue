@@ -63,6 +63,7 @@ const linkClass = 'py-4 px-5 flex flex-row gap-2 items-center hover:text-primary
                             class="flex flex-row items-center py-2 px-4 whitespace-nowrap hover:text-primary-base transition ease-in"
                             active-class="active-header"
                             :to="child.externalLink ?? child._path"
+                            :rel="child.rel"
                             @click="close()"
                           >
                             <Icon :name="child.icon" class="inline-block w-4 h-4 mr-2" />
@@ -77,7 +78,7 @@ const linkClass = 'py-4 px-5 flex flex-row gap-2 items-center hover:text-primary
             </template>
             <template v-else-if="item.for === 'header'">
               <li>
-                <NuxtLink :class="linkClass" active-class="active-header" :to="item.externalLink ?? item._path">
+                <NuxtLink :class="linkClass" active-class="active-header" :to="item.externalLink ?? item._path" :rel="item.rel">
                   {{ item.title }}
                 </NuxtLink>
               </li>

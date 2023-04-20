@@ -51,6 +51,7 @@ const { navigation } = useContent()
                   class="hover:underline hover:underline-offset-4 py-2"
                   active-class="active-footer"
                   :to="item.externalLink ?? item._path"
+                  :rel="item.rel"
                 >
                   {{ item.title }}
                 </NuxtLink>
