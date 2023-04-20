@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 
   content: {
     navigation: {
-      fields: ['for', 'dropdown', 'externalLink']
+      fields: ['for', 'dropdown', 'externalLink', 'rel']
     }
   },
 
