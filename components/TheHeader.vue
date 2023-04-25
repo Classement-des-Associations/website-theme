@@ -31,7 +31,7 @@ const linkClass = 'py-4 px-5 flex flex-row gap-2 items-center hover:text-primary
           class="h-[40px] w-[40px] md:h-[50px] md:w-[50px] text-black hover:text-primary-base motion-safe:transition-all motion-safe:duration-300"
         />
       </NuxtLink>
-      <nav aria-labelledby="primary-nav" class="hidden md:block text-sm leading-[1.125rem]">
+      <nav aria-labelledby="primary-nav" class="hidden lg:block text-sm leading-[1.125rem]">
         <span id="primary-nav" class="sr-only">{{ srNavigationTitle }}</span>
         <ul class="flex flex-row justify-center font-medium">
           <template v-for="item in navigation" :key="item._path">
@@ -87,7 +87,7 @@ const linkClass = 'py-4 px-5 flex flex-row gap-2 items-center hover:text-primary
         </ul>
       </nav>
     </div>
-    <div class="md:hidden flex flex-row items-center">
+    <div class="lg:hidden flex flex-row items-center">
       <TheHeaderDialog :sr-navigation-title="dialog.srNavigationTitle" :sr-dialog-button-title="dialog.srDialogButtonTitle" />
     </div>
   </BaseSection>

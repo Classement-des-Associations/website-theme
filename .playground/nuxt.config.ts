@@ -9,4 +9,10 @@ export default defineNuxtConfig({
       trailingSlash: true
     },
   },
+
+  experimental: {
+    watcher: 'parcel'
+  },
+
+  devtools: true
 })
