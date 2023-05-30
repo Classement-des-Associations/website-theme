@@ -1,7 +1,7 @@
 {
   "name": "@classement-des-associations/website-theme",
   "type": "module",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "main": "./nuxt.config.ts",
   "files": [
     "assets",
@@ -23,11 +23,13 @@
     "generate": "nuxi generate .playground",
     "preview": "nuxi preview .playground",
     "lint": "nuxi prepare & nuxi prepare .playground && eslint .",
-    "ci:publish": "zx scripts/publish.mjs"
+    "ci:publish": "zx scripts/publish.mjs",
+    "release": "bumpp --push --tag --commit"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.5.5",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "bumpp": "^9.1.0",
     "eslint": "^8.41.0",
     "typescript": "^4.9.5",
     "zx": "^7.2.2"
